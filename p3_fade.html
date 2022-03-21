@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PRAKTIKUM 5 ke 3</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        //inisialisasi penggunaan jQuery
+        $(document).ready(function () {
+            //fade out/mennyembunyikan objek
+            $(".sembunyikanobjek").click(function () {
+                // membuat id ubahobjek menjadi disembunyikan
+                $("#objekkotak").hide();
+            });
+            //fade in/menampilkan objek
+            $(".tampilkanobjek").click(function () {
+                // membuat id ubahobjek menjadi tampil kembali
+                $("#objekkotak").fadeIn();
+            });
+            //fade out/menyembunyikan objek dengan transparasi 0.3
+            $(".fadeobjek").click(function () {
+                // membuat id ubahobjek menjadi fadeTo 0.3
+                $("#objekkotak").fadeTo("slow", 0.3);
+            });
+        });
+    </script>
+    <style type="text/css">
+    .objek{
+        height: 100px;
+        width: 150px;
+        background-color: yellow;
+        border: 2px solid black;
+    }
+    div{
+        padding: 20px;
+        margin: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="objek" id="objekkotak"></div>
+    <!-- button Fade Out -->
+    <button class="sembunyikanobjek">Fade Out</button>
+    <!-- button Fade In -->
+    <button class="tampilkanobjek">Fade In</button>
+    <!-- button Fade to 0.3 -->
+    <button class="fadeobjek">Fade to 0.3</button>
+</body>
+</html>

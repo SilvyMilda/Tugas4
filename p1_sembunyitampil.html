@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRAKTIKUM 5 ke 1</title>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script>
+            //inisialisasi pertama penggunaan button jquery
+            $(document).ready(function(){
+                //menyembunyikan elemen class foto
+                $(".sembunyi").click(function() {$("#foto").hide("slow");})
+                //menampilkan elemen class foto
+                $(".tampil").click(function() {$("#foto").show("slow");})
+            })
+            //inisialisasi kedua penggunaan button jquery
+            $(document).ready(function(){
+                //menyembunyikan elemen class foto
+                $(".sembunyi2").click(function() {$("#foto2").hide("slow");})
+                //menampilkan elemen class foto
+                $(".tampil2").click(function() {$("#foto2").show("slow");})
+            })
+            //inisialisasi ketiga penggunaan button jquery
+            $(document).ready(function(){
+                //menyembunyikan elemen class foto
+                $(".sembunyi3").click(function() {$("#foto3").hide("slow");})
+                //menampilkan elemen class foto
+                $(".tampil3").click(function() {$("#foto3").show("slow");})
+            })
+        </script>
+    </head>
+    <body>
+        <!--Button gambar pertama-->
+        <button class="sembunyi">Sembunyikan Gambar 1</button>
+        <button class="tampil">Tampilkan Gambar 1</button>
+        <p><img id="foto" src="download.jpg"></p>
+        <!--Button gambar kedua-->
+        <button class="sembunyi2">Sembunyikan Gambar 2</button>
+        <button class="tampil2">Tampilkan Gambar 2</button>
+        <p><img id="foto2" src="download2.jpg"></p>
+        <!--Button gambar ketiga-->
+        <button class="sembunyi3">Sembunyikan Gambar 3</button>
+        <button class="tampil3">Tampilkan Gambar 3</button>
+        <p><img id="foto3" src="download3.jpg"></p>
+    </body>
+</html>

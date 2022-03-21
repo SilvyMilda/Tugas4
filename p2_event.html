@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRAKTIKUM 5 ke 2</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            // inisialisasi penggunaan jQuery
+            $(document).ready(function () {
+                //perintah doubleclick
+                $(".kotak").dblclick(function () {
+                //mengubah warna kotak menjadi warna merah setelah dilakukan double click
+                $(this).css({background:"red"});
+                });
+            });
+        </script>
+        <!--mengatur tampilan kotak-->
+        <style type="text/css">
+            .kotak{
+                background: yellow;
+                float: left;
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+            } 
+        </style>
+    </head>
+    <body>
+        <p> Klik 2x pada setiap kotak untuk mengubah warna kotak </p>
+        <!-- memanggil div -->
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+    </body>
+</html>
